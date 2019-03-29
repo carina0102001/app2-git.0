@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+id ="com.phonegap.app2"
+version = "1.0.0">
+
+<name>app2-2019Especialidad tecnico en programacion </name>
+
+<description>
+aplicacion que nos muestra los modulos de la especialidad de tecnico en programacion
+</description>
+
+<author href="https://build.phonegap.com" email="carina.cm813@gmail.com">
+Carina Martinez Nieto
+</author>
+
+<!--personaliza la aplicacion y plataforma -->
+<preference name="orientation"    value="default"/>
+<!--preference name="orientation"   value="portrait"/>
+<preference name="orientation"   value="landscape"/> -->
+<preference name="target-device"   value="universal"/>
+<preference name="fullscreen"     value="true"/>
+<preference name="android-installLocation"  value="auto"/>
+<preference name="permissions" value="INTERNET"/>
+
+<!--plugins-->
+<plugin name="cordova-plugin-device" spec="~1.1.4"/>
+<plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
+<plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
+<!-- <plugin name="cordova-plugin-geolocation" source="npm"/> -->
+<!--para accesar a paginas en internet-->
+<allow-intent href="https://*/*"/>
+<acces origin="https://*/*"/>
+<allow-intent href="http://*/*"/>
+<acces origin="http://*/*"/>
+<plugin name="cordova-plugin-whitelist" source="npm"/>
+
+<!-- Colocar icono app -->
+
+<icon src="esqueleto1/res/android/phone-icon.png"/>
+
+</widget>
