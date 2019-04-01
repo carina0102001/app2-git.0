@@ -38,6 +38,6 @@ Carina Martinez Nieto
 
 <!-- Colocar icono app -->
 
-<icon src="esqueleto1/res/android/phone-icon.png"/>
+<icon src="res/android/mdpi2.png"/>
 
 </widget>

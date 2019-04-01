@@ -11,17 +11,47 @@
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
 
 <!--grupo JavaScript-->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/jquery.mobile-1.4.5.min.js"></script>
 <!--  <script src="js/acciones.ls"></script> -->
 <script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('imagenes/images (8).jpg')">
 <div data-role="page" id="Principal" data-theme="a">
 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
 <h1>Informacion Especial Tecnico en Programacion </h1>
 </div>
+
 <div data-role="main" class="ui-content">
 <div data-role="collapsible" data-content-theme="false">
 <h1>Perfil de egreso</h1>
@@ -29,8 +59,9 @@
 <p>Informacion sobre el perfil de Egreso de la Especialidad</p>
 <br>
 <div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/images (8).jpg',1)"><img src="imagenes/images (6).jpg" width="317" height="159" id="Image13"></a>
 <p>La formacion que ofrece la cerrera de Tecnico en Programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:
-<br>
+  <br>
 <ul>
 <li>Instalación y desarrollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos,</li>
 
@@ -45,6 +76,7 @@ Las siguientes competencias profesionales:<br>
 <li>Desarrolla aplicaciones web y moviles</li>
 <li>Administra sistemas operativos, aplicaciones y servicios</li>
 <li>Desarrolla, administra y configura soluciones de e-learning y comercio electronico </li>
+
 </ul>
 </p>
 </div>
@@ -89,6 +121,32 @@ Las siguientes competencias profesionales:<br>
 </a>
 </li>
 </ul>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/images_1.jpg" alt="images (1)" title="images (1)" id="wows1_0"/></li>
+		<li><img src="data1/images/images_4.jpg" alt="images (4)" title="images (4)" id="wows1_1"/></li>
+		<li><img src="data1/images/images_5.jpg" alt="images (5)" title="images (5)" id="wows1_2"/></li>
+		<li><img src="data1/images/images_6.jpg" alt="images (6)" title="images (6)" id="wows1_3"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/images_8.jpg" alt="css slider" title="images (8)" id="wows1_4"/></a></li>
+		<li><img src="data1/images/images7.jpg" alt="images(7)" title="images(7)" id="wows1_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="images (1)"><span><img src="data1/tooltips/images_1.jpg" alt="images (1)"/>1</span></a>
+		<a href="#" title="images (4)"><span><img src="data1/tooltips/images_4.jpg" alt="images (4)"/>2</span></a>
+		<a href="#" title="images (5)"><span><img src="data1/tooltips/images_5.jpg" alt="images (5)"/>3</span></a>
+		<a href="#" title="images (6)"><span><img src="data1/tooltips/images_6.jpg" alt="images (6)"/>4</span></a>
+		<a href="#" title="images (8)"><span><img src="data1/tooltips/images_8.jpg" alt="images (8)"/>5</span></a>
+		<a href="#" title="images(7)"><span><img src="data1/tooltips/images7.jpg" alt="images(7)"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+
+<a href="http://www.cbtis016.edu.mx/" target="_self"> Ir a la página del CBTis 16 </a>
+
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
 </div>
 <div data-role="footer" align="center" data-theme="b" data-position="fixed">
 <div>
